@@ -61,7 +61,6 @@ for (let p = 0; p < 11; p++) {
   console.log(`${p} * ${p} =${p * p}  `)
 
 }
-
 // Using loop print the following pattern
 //  i    i^2   i^3
 //  0    0     0
@@ -75,25 +74,93 @@ for (let p = 0; p < 11; p++) {
 //  8    64    512
 //  9    81    729
 //  10   100   1000
+for (let i = 0; i < 11; i++) {
+  console.log(`${i}  ${i ** 2}  ${i ** 3}`)
+}
 // Use for loop to iterate from 0 to 100 and print only even numbers
-
+for (let i = 0; i < 101; i++) {
+  if (i % 2 === 0) {
+    console.log(i)
+  }
+}
 // Use for loop to iterate from 0 to 100 and print only odd numbers
-
+for (let i = 0; i < 101; i++) {
+  if (i % 2 === 1) {
+    console.log(i)
+  }
+}
 // Use for loop to iterate from 0 to 100 and print only prime numbers
-
+// console.log("only prime numbers")
+// for (let i = 100; i > 1; i--) {
+//   let number = []
+//   number.push(i)
+//   for (let x = i - 1; x > 1; x--) {
+//     if (i % x === 0) {
+//       console.log(`${i} is not prime number`)
+//     }
+//   }
+//   console.log(`number ${number}`)
+// }
 // Use for loop to iterate from 0 to 100 and print the sum of all numbers.
-
 // The sum of all numbers from 0 to 100 is 5050.
+console.log("sum of all numbers")
+let sum = 0
+for (let i = 0; i < 101; i++) {
+  sum = sum + i
+}
+console.log(sum)
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
-
 // The sum of all evens from 0 to 100 is 2550. And the sum of all odds from 0 to 100 is 2500.
+let sumOfEven = 0
+for (let i = 0; i < 101; i++) {
+  if (i % 2 === 0) {
+    sumOfEven = sumOfEven + i
+  }
+}
+console.log(sumOfEven)
+let sumOfOdd = 0
+for (let i = 0; i < 101; i++) {
+  if (i % 2 === 1) {
+    sumOfOdd = sumOfOdd + i
+  }
+}
+console.log(sumOfOdd)
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds. Print sum of evens and sum of odds as array
-
 //   [2550, 2500]
+let arrayOfEvenAndOdd = [sumOfEven, sumOfOdd]
+console.log(arrayOfEvenAndOdd)
 // Develop a small script which generate array of 5 random numbers
-
+let randomNumberArray = []
+for (let i = 1; i < 6; i++) {
+  let randomNumber = Math.random() * 101
+  let randomNumberFromOneTohundrend = Math.floor(randomNumber)
+  randomNumberArray.push(randomNumberFromOneTohundrend)
+}
+console.log(randomNumberArray)
 // Develop a small script which generate array of 5 random numbers and the numbers must be unique
-
+let randomNumberArray2 = []
+for (let i = 1; i < 50; i++) {
+  let randomNumber = Math.random() * 101
+  let randomNumberFromOneTohundrend = Math.floor(randomNumber)
+  if (!(randomNumberArray2.includes(randomNumberFromOneTohundrend))){
+    randomNumberArray2.push(randomNumberFromOneTohundrend)
+  }
+}
+console.log(randomNumberArray2)
 // Develop a small script which generate a six characters random id:
-
 // 5j2khz
+const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+console.log(alphabet.length)
+let randomNumber = Math.random() * 27;
+let randomNumberFromOneToTwenty = Math.floor(randomNumber);
+console.log(randomNumberFromOneToTwenty)
+console.log(alphabet[randomNumberFromOneToTwenty - 1])
+
+
+for (let i = 1; i < 7; i++) {
+  let randomNumber = Math.random() * 27;
+let randomNumberFromOneToTwenty = Math.floor(randomNumber);
+  let randomAlphabet = alphabet[randomNumberFromOneToTwenty - 1]
+//   let generateRandomId =
+
+}
