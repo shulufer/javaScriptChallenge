@@ -27,7 +27,12 @@ do {
   c = c - 1
 } while (c >= 0)
 // Iterate 0 to n using for loop
-
+for(let i = 0; i <= 12; i++){
+  if(i == 9){
+    break
+  }
+  console.log(i)
+}
 // Write a loop that makes the following pattern using console.log():
 //     #
 //     ##
@@ -37,11 +42,10 @@ do {
 //     ######
 //     #######
 for(let diyezArray = []; diyezArray.length <= 7; diyezArray.push("#") ){
-  diyez = diyezArray.toString()
-  console.log(diyez.match(/,/gi))
+  diyez = diyezArray.join(' ')
+  console.log(diyez)
 }
 // Use loop to print the following pattern:
-
 // 0 x 0 = 0
 // 1 x 1 = 1
 // 2 x 2 = 4
@@ -53,8 +57,12 @@ for(let diyezArray = []; diyezArray.length <= 7; diyezArray.push("#") ){
 // 8 x 8 = 64
 // 9 x 9 = 81
 // 10 x 10 = 100
-// Using loop print the following pattern
+for (let p = 0; p < 11; p++) {
+  console.log(`${p} * ${p} =${p * p}  `)
 
+}
+
+// Using loop print the following pattern
 //  i    i^2   i^3
 //  0    0     0
 //  1    1     1
